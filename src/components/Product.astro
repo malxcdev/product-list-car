@@ -1,0 +1,14 @@
+---
+
+import waffleImage from '../assets/images/image-waffle-mobile.jpg';
+import addToCartIcon from '../assets/images/icon-add-to-cart.svg';
+---
+<section class="flex flex-col">
+    <figure class="relative mb-10">
+        <img class="rounded-xl" src={waffleImage.src} alt="">
+        <button class="absolute bg-rose-50 rounded-full text-white -bottom-6 left-1/2 -translate-x-1/2 px-6 py-3 flex gap-3 font-semibold border-2 border-rose-900"><img class="" src={addToCartIcon.src}>Add to Cart</button>
+    </figure>
+    <p class="text-rose-400">Waffle</p>
+    <p class="text-xl font-semibold">Waffle with Berries</p>
+    <p class="text-xl font-semibold text-red">$6.50</p>
+</section>
