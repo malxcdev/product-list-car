@@ -3,11 +3,25 @@ import Welcome from '../components/Welcome.astro';
 import Layout from '../layouts/Layout.astro';
 import Product from '../components/Product.astro';
 // Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
-// Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
+//Imagenes de los productos
+import waffleImage from '../assets/images/image-waffle-mobile.jpg';
+import cremeBrulee from '../assets/images/image-creme-brulee-mobile.jpg';
+import toastImage from '../assets/images/image-toast-mobile.jpg';
+import crepeImage from '../assets/images/image-crepe-mobile.jpg';
+import frenchToastImage from '../assets/images/image-french-toast-mobile.jpg';
 ---
-
-<Layout>
+<Layout class="font-red-hat">
+	
 	<div class="p-10">
-		<Product />
+		<h2 class="text-rose-900 text-5xl font-bold mb-6">Desserts</h2>
+		<Product category="Waffle" name="Waffle with Berries" price="6.50" url={waffleImage}/>
+		<Product category="Creme Brulee" name="Vanilla Bean Creme Brulee" price="7.00" url={cremeBrulee}/>
+		<Product category="Waffle" name="Waffle with Berries" price="6.50" url={}/>
+		<Product category="Waffle" name="Waffle with Berries" price="6.50" url={}/>
+		<Product category="Waffle" name="Waffle with Berries" price="6.50" url={}/>
+		<Product category="Waffle" name="Waffle with Berries" price="6.50" url={}/>
+		<Product category="Waffle" name="Waffle with Berries" price="6.50" url={}/>
+		<Product category="Waffle" name="Waffle with Berries" price="6.50" url={}/>
+		<Product category="Waffle" name="Waffle with Berries" price="6.50" url={}/>
 	</div>
 </Layout>

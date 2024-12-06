@@ -14,6 +14,9 @@ export default {
 					900: 'hsl(14, 65%, 9%)',
 				},
 		},
+		fontFamily: {
+			'red-hat': ['"Red Hat Text"', 'sans-serif'],
+		},
 	},
 	plugins: [],
 }
